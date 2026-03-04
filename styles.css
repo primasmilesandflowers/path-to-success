@@ -135,7 +135,7 @@ table {
 }
 
 /*  ----------------------------- ROOT VARIABLES  --------------------------------- */
-root {
+.root {
   --Teal: #4ca7c0;
   --Purple: #484fb7;
   --Lavender: #6b8fe7;
@@ -146,27 +146,200 @@ root {
 }
 
 /*  ----------------------------- GLOBAL STYLES (mobile first/small)  ------------  */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2 {
   font-family: "Kavoon";
+  padding: 10px 0 10px 20px;
 }
+
 h3,
 h4,
 p {
   font-family: "Inter";
+  padding: 0 0 10px 20px;
 }
+
 h1 {
   font-size: 3em;
+  line-height: 1.5;
 }
-nav.h2 {
+
+header {
+  color: white;
+  background-color: #484fb7;
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+header p {
+  font-style: italic;
+}
+
+nav {
+  background-color: #e9bb57;
+  font-family: "Inter";
+  text-transform: uppercase;
+  padding: 10px 0 20px 0;
+}
+
+nav h2 {
   font-size: 1.5em;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: bold;
+  font-style: italic;
+  color: black;
 }
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav li {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 8px;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #484fb7;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   font-size: 2em;
+  color: white;
+  padding-top: 10px;
+  font-weight: bold
 }
+
 h3 {
   font-size: 1.5em;
+  color: #e9bb57;
+  font-weight: bold;
+  padding: 10px;
 }
+
 h4 {
   font-size: 1.15em;
+  color: #484fb7;
+  font-weight: bold;
+}
+
+main {
+  background-color: #484fb7;
+}
+
+#ourServices section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#ourServices img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+#whyChooseUs {
+  background-color: #d9526f;
+}
+
+#whyChooseUs ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#whyChooseUs li {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Inter";
+}
+
+#whyChooseUs li#teal {
+  background-color: #4ca7c0;
+}
+#whyChooseUs li#lavender {
+  background-color: #6b8fe7;
+}
+#whyChooseUs li#yellow {
+  background-color: #e9bb57;
+}
+
+th, td {
+  border: 1px solid #e9bb57;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+  padding: 10px;
+}
+
+table th {
+  background-color: #e9bb57;
+  padding: 25px;
+  font-weight: bold;
+}
+
+table td {
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+#takeFirstStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9526f;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+#takeFirstStep button {
+  background-color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 6px black;
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  background-color: #484fb7;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+footer p, footer a {
+  color: white;
+  font-family: "Inter";
 }
